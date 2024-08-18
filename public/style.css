@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    display: flex;
+    padding: 10px 0 10px 0;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+.header img{
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+}
+.header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    
+}
+
+.sectionProductos{
+    margin-top: 10px;
+}
+.sectionProductos .div-btn{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sectionFactura{
+    margin-top: 10px;
+}
+.table{
+    text-align: center;
+    border: 1px #bebebe solid;
+    margin-top: 10px;
+}
+footer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+footer p {
+    margin: 5px 0 5px 0;
+}
+#clima{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}

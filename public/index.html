@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/temple-logo-mobile.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cargar Factura</title>
+</head>
+<body class="bg-light">
+    <header id="header" class="header container">
+        <img src="./img/temple-logo-mobile.svg" alt="Logo imagen">
+        <h1 class="display-4">Cargar Factura</h1>
+    </header>
+    <main class="contenedor container">
+        <section class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Datos de Factura</h3>
+                    </div>
+                <div class="card-body">
+                    <form class="row formFactura">
+                        <div class="form-group col-md-6">
+                            <label for="">Nro Factura</label>
+                            <input type="text" placeholder="12185487" id="nroFactura" class="form-control" autofocus required ></div>
+                        <div class="form-group col-md-6">
+                            <label for="">Fecha</label>
+                            <input type="date" id="fecha" class="form-control"></div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="sectionProductos row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form class="row formProducto">
+                            <div class="form-group col-md-2">
+                                <label for="">Cantidad</label>
+                                <input type="number" onkeypress="validador(this)" class="numero form-control" id="cantidad" min="1" pattern="^[0-9]+"></div>
+                            <div class="form-group col-md-6">
+                                <label for="producto">Producto</label>
+                                <select name="producto" id="selectProducto" class="form-control">
+                                    <option value="0">--Seleccione--</option>
+                                    <option value="Temple Wolf Ipa">Temple Wolf Ipa</option>
+                                    <option value="Temple Flow Apa">Temple Flow Apa</option>
+                                    <option value="Temple Indian Golden">Temple Indian Golden</option>
+                                    <option value="Temple Old Scottish">Temple Old Scottish</option>
+                                    <option value="Temple Black Soul Stout">Temple Black Soul Stout</option>
+                                    <option value="Temple Organic Honey">Temple Organic Honey</option>
+                                </select></div>
+                            <div class="form-group col-md-2">
+                                <label for="">Precio Total</label>
+                                <input type="number" onkeypress="validador(this)" class="numero form-control" id="pTotal" min="1" pattern="^[0-9]+"></div>
+                            <div class="div-btn form-group col-md-2">
+                                <a href= "#" class="btn btn-primary btnAgregar">Agregar</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4">
+                <a href="./factura.html" target="_blank" class="btn btn-dark btn-lg btnfactura">Guardar Factura</a>
+            </div>
+        </section>
+        <section class="section-factura row">
+            <div class="col">
+                <table class="table">
+                    <tr>
+                        <th>#</th>
+                        <th>Cantidad</th>
+                        <th>Producto</th>
+                        <th>P. Unitario</th>
+                        <th>P. Total</th>
+                        <th>Eliminar</th>
+                    </tr>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="clima">
+
+        </section>
+        <p>Copyright ©2023 All rights reserved. | Este diseño fue modificado por
+            Whillder Escalante.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./entregafinal.js"></script>
+    
+</body>
+
+</html>
